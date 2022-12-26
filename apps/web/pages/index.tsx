@@ -1,6 +1,7 @@
+import { NextPage } from "next";
 import { Button } from "ui";
 
-const Homepage = () => {
+const Homepage: NextPage = () => {
   return (
     <div>
       <p>Hello, world!</p>

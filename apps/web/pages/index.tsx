@@ -1,10 +1,12 @@
 import { Button } from "ui";
 
-export default function Web() {
+const Homepage = () => {
   return (
     <div>
-      <h1>Web</h1>
+      <p>Hello, world!</p>
       <Button />
     </div>
   );
-}
+};
+
+export default Homepage;

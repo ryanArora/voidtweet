@@ -11,7 +11,7 @@ export const trpc = createTRPCNext<AppRouter>({
            * If you want to use SSR, you need to use the server's full URL
            * @link https://trpc.io/docs/ssr
            **/
-          url: `${process.env.BASEURL}/api/trpc`,
+          url: `${process.env.NEXT_PUBLIC_BASEURL}/api/trpc`,
         }),
       ],
       /**

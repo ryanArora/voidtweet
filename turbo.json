@@ -8,7 +8,7 @@
       "outputs": []
     },
     "dev": {
-      "dependsOn": ["$BASEURL"],
+      "dependsOn": ["$NEXT_PUBLIC_BASEURL"],
       "cache": false
     }
   }

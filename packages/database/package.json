@@ -1,0 +1,20 @@
+{
+  "name": "database",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "dev": "docker start --attach voidtweet-postgres || docker run --name voidtweet-postgres -e POSTGRES_PASSWORD=postgrespassword -p 5432:5432 postgres",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push --skip-generate",
+    "prisma:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.8.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.8.0",
+    "typescript": "file:../../node_modules/typescript"
+  }
+}

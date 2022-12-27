@@ -1,10 +1,13 @@
 import Layout from "../components/Layout";
+import { trpc } from "../utils/trpc";
 import type { AppProps } from "next/app";
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Layout>
       <Component {...pageProps} />
     </Layout>
   );
-}
+};
+
+export default trpc.withTRPC(MyApp);

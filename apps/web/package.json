@@ -9,11 +9,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tanstack/react-query": "^4.20.4",
+    "@trpc/client": "^10.7.0",
+    "@trpc/next": "^10.7.0",
+    "@trpc/react-query": "^10.7.0",
+    "@trpc/server": "^10.7.0",
     "database": "workspace:*",
     "next": "^13.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "ui": "workspace:*",
+    "zod": "^3.20.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",
